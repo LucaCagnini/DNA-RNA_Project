@@ -1,6 +1,7 @@
 PCA plots (Principal Component Analysis) show variability in the dataset. 
 Divided into:
 
+
 -**PCA_batch**: PCA plot colored by batch.
 
 -**PCA_groups**: PCA plot colored by experimental group.
