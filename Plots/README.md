@@ -1,11 +1,11 @@
 This folder contains the plots form our analysis:
 
--QC_array: Plot for quality control analysis of array; 
+-**QC_array**: Plot for quality control analysis of array; 
 
--PCA_plots: Principal component analysis divided for batch,sex,group,plot;
+-**PCA_plots**: Principal component analysis divided for batch,sex,group,plot;
 
--heatmaps: Heatmap of first 100 genes;
+-**heatmaps**: Heatmap of first 100 genes;
 
--Statistics_plot: Histogram pvalues adjusted ofr statistical testing, manhattan plot, volcano plot;
+-**Statistics_plot**: Histogram pvalues adjusted ofr statistical testing, manhattan plot, volcano plot;
 
 
