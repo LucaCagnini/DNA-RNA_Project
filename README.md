@@ -10,7 +10,7 @@ This repository contains the final project of Group 5 for the DNA/RNA Dynamics c
 ## Requirements
 The project was performed using R and Rstudio, analysing data from the platform Illumina HumanMethylation450k (input_data). necessary packages were installed in our R enviroment:
 
-'''
+ `
 install.packages(minfi)
 install.packages(ggplot2)
 install.packages(nitr)
@@ -20,7 +20,8 @@ install.packages(factoextra)
 install.packages(cluster)
 install.packages(qqman)
 install.packages(gplots)
-'''
+
+ `
 
 ## Workflow
 
