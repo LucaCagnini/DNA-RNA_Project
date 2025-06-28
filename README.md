@@ -18,7 +18,6 @@ The project was performed using R and Rstudio, analysing data from the platform 
 install.packages(minfi)
 install.packages(ggplot2)
 install.packages(nitr)
-install.packages(Illuminahumanmethylation450k.manifest)
 install.packages(BiocManager)
 install.packages(factoextra)
 install.packages(cluster)
