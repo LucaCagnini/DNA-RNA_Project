@@ -1,10 +1,10 @@
 # DNA-RNA_Project
 
 ## Table of contents
--[Overview] (#Overview)
--[Requirements] (#requirements)
--[Workflow] (#Workflow)
-_[Contacts] (#contacts)
+- [Overview](#Overview)
+- [Requirements](#requirements)
+- [Workflow](#Workflow)
+- [Contacts](#contacts)
 
 
 ## Overview
