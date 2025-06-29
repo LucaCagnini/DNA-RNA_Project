@@ -1,18 +1,17 @@
 # DNA-RNA_Project
 
 ## Table of contents
-- [Overview](#Overview)
+- [Overview](#overview)
 - [Requirements](#requirements)
-- [Workflow](#Workflow)
-- [1. Data Preparation and Import](#1.Data_Preparation_and_Import)
-- [2. Signal Extraction](#2.Signal_Extraction)
-- [3. Quality Control](#3.Quality_Control)
-- [4. Beta and M Value Calculation](#4.Beta_and_M_Value_Calculation)
-- [5.Normalization and Batch Effect Analysis](#5.Normalization_and_Batch_Effect_Analysis)
-- [6.Statistical Analysis](#6.Statistical_Analysis)
-- [7.Visualization](#7.Visualization)
+- [Workflow](#workflow)
+  - [1. Data Preparation and Import](#1-data-preparation-and-import)
+  - [2. Signal Extraction](#2-signal-extraction)
+  - [3. Quality Control](#3-quality-control)
+  - [4. Beta and M Value Calculation](#4-beta-and-m-value-calculation)
+  - [5. Normalization and Batch Effect Analysis](#5-normalization-and-batch-effect-analysis)
+  - [6. Statistical Analysis](#6-statistical-analysis)
+  - [7. Visualization](#7-visualization)
 - [Contacts](#contacts)
-
 
 ## Overview
 
@@ -96,11 +95,17 @@ This document outlines the step-by-step workflow of our DNA/RNA methylation proj
 ## Contacts
 
 Project members:
+
 Marco Cuscunà (marco.cuscunà@studio.unibo.it)
+
 Marco Centenaro (marco.centenaro@studio.unibo.it)
+
 Michele Carbonieri (michele.carbonieri@studio.unibo.it)
+
 Marina Mariano (marina.mariano@studio.unibo.it)
+
 Luca Cagnini (luca.cagnini@studio.unibo.it)
+
 Massimo Lanari (massimo.lanari@studio.unibo.it)
 
 
