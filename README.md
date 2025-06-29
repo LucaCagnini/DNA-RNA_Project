@@ -97,10 +97,15 @@ This document outlines the step-by-step workflow of our DNA/RNA methylation proj
 Project members:
 
 -Marco Cuscunà (marco.cuscuna@studio.unibo.it)
+
 -Marco Centenaro (marco.centenaro@studio.unibo.it)
+
 -Michele Carbonieri (michele.carbonieri@studio.unibo.it)
+
 -Marina Mariano (marina.mariano@studio.unibo.it)
+
 -Luca Cagnini (luca.cagnini@studio.unibo.it)
+
 -Massimo Lanari (massimo.lanari@studio.unibo.it)
 
 
