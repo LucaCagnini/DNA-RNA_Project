@@ -4,6 +4,13 @@
 - [Overview](#Overview)
 - [Requirements](#requirements)
 - [Workflow](#Workflow)
+- [1. Data Preparation and Import](#1.Data_Preparation_and_Import)
+- [2. Signal Extraction](#2.Signal_Extraction)
+- [3. Quality Control](#3.Quality_Control)
+- [4. Beta and M Value Calculation](#4.Beta_and_M_Value_Calculation)
+- [5.Normalization and Batch Effect Analysis](#5.Normalization_and_Batch_Effect_Analysis)
+- [6.Statistical Analysis](#6.Statistical_Analysis)
+- [7.Visualization](#7.Visualization)
 - [Contacts](#contacts)
 
 
@@ -26,7 +33,75 @@ install.packages(gplots)
 ```
 
 
-## Workflow
+# Project Workflow
+
+This document outlines the step-by-step workflow of our DNA/RNA methylation project, comparing CTRL and DIS sample groups using Illumina microarray data.
+
+---
+
+## 1. Data Preparation and Import
+- Install and load required R packages: `minfi`, `BiocManager`, `knitr`.
+- Clean the R environment and set the working directory.
+- Load the sample sheet using `read.metharray.sheet()` to import metadata.
+- Read raw data using `read.metharray.exp()` to generate the `RGset` object.
+
+---
+
+## 2. Signal Extraction
+- Extract fluorescence intensity data for Red (Cy5) and Green (Cy3) channels from `RGset` using `getRed()` and `getGreen()`.
+- Store the data into two separate dataframes: `Red` and `Green`.
+
+---
+
+## 3. Quality Control
+- Classify sample quality based on the percentage of failed probes:
+  - **High quality**: < 0.01%
+  - **Good quality**: < 0.2%
+  - **Low quality**: > 0.2%
+  - **Critical quality**: around 1% (may require exclusion)
+
+---
+
+## 4. Beta and M Value Calculation
+- Split samples into CTRL and DIS groups using metadata.
+- Create `MSet.raw` objects for each group.
+- Compute **Beta values** with `getBeta()` and **M values** with  `getM()`.
+- Calculate and plot mean methylation values for both groups.
+
+---
+## 5. Normalization and Batch Effect Analysis
+- Perform Principal Component Analysis (PCA) to assess batch effects (e.g., by `Sentrix_ID`).
+- PCA suggested that normalization did not fully correct batch effects.
+
+---
+
+## 6. Statistical Analysis
+- Perform t-tests for each probe comparing CTRL vs DIS.
+- Create a dataframe containing p-values.
+- Filter probes with p ≤ 0.05 for significance.
+- Plot the distribution of p-values.
+
+---
+
+## 7. Visualization
+- Generate a **heatmap** using the top 100 most significant probes.
+- Apply **hierarchical clustering** with various linkage methods:
+  - Single
+  - Complete
+  - Average (found to be most biologically interpretable)
+  
+  ---
+
+  
+## Contacts
+
+Project members:
+Marco Cuscunà (marco.cuscunà@studio.unibo.it)
+Marco Centenaro (marco.centenaro@studio.unibo.it)
+Michele Carbonieri (michele.carbonieri@studio.unibo.it)
+Marina Mariano (marina.mariano@studio.unibo.it)
+Luca Cagnini (luca.cagnini@studio.unibo.it)
+Massimo Lanari (massimo.lanari@studio.unibo.it)
 
 
 
