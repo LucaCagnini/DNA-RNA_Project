@@ -66,6 +66,7 @@ This document outlines the step-by-step workflow of our DNA/RNA methylation proj
 - Create `MSet.raw` objects for each group.
 - Compute **Beta values** with `getBeta()` and **M values** with  `getM()`.
 - Calculate and plot mean methylation values for both groups.
+- Normalise data and asses the quality of normalisation. 
 
 ---
 ## 5. Normalization and Batch Effect Analysis
@@ -75,7 +76,7 @@ This document outlines the step-by-step workflow of our DNA/RNA methylation proj
 ---
 
 ## 6. Statistical Analysis
-- Perform t-tests for each probe comparing CTRL vs DIS.
+- Perform Mann whitney U test for each probe comparing CTRL vs DIS.
 - Create a dataframe containing p-values.
 - Filter probes with p ≤ 0.05 for significance.
 - Plot the distribution of p-values.
@@ -84,10 +85,7 @@ This document outlines the step-by-step workflow of our DNA/RNA methylation proj
 
 ## 7. Visualization
 - Generate a **heatmap** using the top 100 most significant probes.
-- Apply **hierarchical clustering** with various linkage methods:
-  - Single
-  - Complete
-  - Average (found to be most biologically interpretable)
+- Apply **hierarchical clustering**. 
   
   ---
 
